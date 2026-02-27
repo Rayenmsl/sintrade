@@ -4,8 +4,8 @@ import asyncio
 
 from telegram.ext import Application, CallbackQueryHandler, CommandHandler, MessageHandler, filters
 
-from .config import get_settings
-from .handlers import (
+from config import get_settings
+from handlers import (
     askme_command,
     buttons_command,
     button_callback_handler,
