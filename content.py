@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Dict, List, Optional
 
-from .models import Lesson, QuizQuestion
+from models import Lesson, QuizQuestion
 
 LEVEL_ORDER = ["beginner", "intermediate", "advanced", "professional"]
 LEVEL_LABELS = {
