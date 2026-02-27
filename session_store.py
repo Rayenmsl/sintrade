@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Dict
 
-from .models import UserSession
+from models import UserSession
 
 
 class SessionStore:
@@ -20,4 +20,5 @@ class SessionStore:
 
 
 session_store = SessionStore()
+
 
