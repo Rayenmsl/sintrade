@@ -14,8 +14,8 @@ from telegram import (
 from telegram.error import BadRequest
 from telegram.ext import ContextTypes
 
-from .ai_content import AIContentClient
-from .config import (
+from ai_content import AIContentClient
+from config import (
     get_openai_api_key,
     get_openai_app_name,
     get_openai_base_url,
@@ -23,7 +23,7 @@ from .config import (
     get_openai_site_url,
     get_openai_timeout_seconds,
 )
-from .content import (
+from content import (
     DAILY_CHALLENGES,
     LEVEL_ORDER,
     PREMIUM_LOCK_MESSAGE,
@@ -33,10 +33,10 @@ from .content import (
     lessons_for_user,
     next_level,
 )
-from .models import DailyChallengeState, Lesson, QuizState, SimulationState, UserSession
-from .quiz_generator import build_random_quiz_for_lesson
-from .safety import SAFETY_REFUSAL, is_unrealistic_request
-from .session_store import session_store
+from models import DailyChallengeState, Lesson, QuizState, SimulationState, UserSession
+from quiz_generator import build_random_quiz_for_lesson
+from safety import SAFETY_REFUSAL, is_unrealistic_request
+from session_store import session_store
 
 LANG_AR = "ar"
 LANG_EN = "en"
