@@ -1,0 +1,15 @@
+[Unit]
+Description=Sin Trade Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/sintrade-bot
+EnvironmentFile=/opt/sintrade-bot/.env
+ExecStart=/opt/sintrade-bot/.venv/bin/python /opt/sintrade-bot/main.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

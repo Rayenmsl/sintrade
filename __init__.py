@@ -1,0 +1,2 @@
+"""Sin Trade bot package."""
+
