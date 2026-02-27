@@ -4,7 +4,7 @@ import random
 import re
 from typing import List, Sequence, Tuple
 
-from .models import Lesson, QuizQuestion, UserSession
+from models import Lesson, QuizQuestion, UserSession
 
 PROMPT_STYLES = (
     "{prompt}",
